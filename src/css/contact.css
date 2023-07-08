@@ -1,0 +1,209 @@
+@import url(./root.css);
+
+.section {
+    height: 55vh;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.295);
+    margin-bottom: 55px;
+    overflow: hidden;
+}
+
+.img_left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.img_rigth {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    z-index: -3;
+}
+
+.section>h1 {
+    font-size: 60px;
+    font-family: var(--font-family-monospace);
+
+}
+
+/* message */
+
+.message {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(250, 235, 215, 0.059);
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 70vh;
+}
+
+.inputs>p {
+    font-size: 25px;
+    font-family: var(--font-family-monospace);
+}
+
+.mesaj {
+    height: 200px;
+    width: 700px;
+    overflow: scroll;
+    padding-bottom: 150px;
+    outline: none;
+}
+
+.email {
+    display: flex;
+    gap: 20px;
+    width: 700px;
+}
+
+.email>input {
+    width: 345px;
+    outline: none;
+    border: 1px solid gray;
+    height: 40px;
+    padding-left: 5px;
+
+}
+
+.subject {
+    width: 700px;
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+    border: 1px solid gray;
+}
+
+.inputs {
+    width: 800px;
+    height: 75vh;
+}
+
+.inputs>button {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid orangered;
+    background: transparent;
+    color: orangered;
+    letter-spacing: 2px;
+    font-family: var(--font-family-monospace);
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.inputs>button:hover{
+    background-color: orangered;
+    color: white;
+}
+/* adres */
+
+.adres {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    height: 70vh;
+    padding-top: 30px;
+}
+
+.adreses,
+.phones,
+.support {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:910px) {
+
+    .section {
+        overflow: hidden;
+        width: auto;
+    }
+
+    .message {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .mesaj{
+        width: 520px;
+    }
+
+    .email{
+        width: 900px;
+        justify-content: center;
+    }
+    
+    .email>input{
+        width: 250px;
+    }
+
+    .adres{
+        width: auto;
+        height: auto;
+    }
+    
+    .subject{
+        width: 520px;
+    }
+
+    .inputs {
+       justify-content: center;
+       align-items: center;
+    }
+    
+
+    .img_rigth {
+        right: -50%;
+    }
+
+    .img_left {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:720px){
+    .message{
+        overflow: hidden;
+    }
+    .mesaj{
+        width: 400px;
+        height: 50px;
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+    .email{
+        flex-direction: column;
+        width: 400px;
+    }
+    .email>input{
+        width:100%;
+    }
+    .subject{
+        width: 400px;
+    }
+   .img_rigth{
+    display: none;
+   }
+
+}

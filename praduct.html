@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praducts</title>
+    <script src="https://kit.fontawesome.com/c378ec51b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/praduct.css">
+</head>
+
+<body>
+    <!-- Navbar header -->
+    <nav class="navbar">
+        <div class="nav_left">
+            <a href="#">
+                <img src="./src/images/logo.png.webp" alt="logo">
+            </a>
+            <a href="./index.html">Home</a>
+            <a href="./praduct.html">Product</a>
+            <a href="./about.html">About</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav_rigth">
+            <a href="">
+                <i class="fa-solid fa-phone"></i>
+                +994 (55) 701 90 50
+            </a>
+            <p>
+                <a href="./blog.html">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+                <span class="count"></span>
+            </p>
+                
+        </div>
+    </nav>
+    <!-- navbar hidden -->
+    <nav class="nav_hidden">
+       <a href="./blog.html"> <span class="count_hidden">0</span></a>
+        <a href="./blog.html" class="hearts"><i class="fa-solid fa-heart"></i></a>
+        <button id="btn" class="btn" type="button">MENU<i class="fa-solid fa-bars"></i></button>
+        <div id="menu" class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./praduct.html">Product</a>
+            <a href="./about.html">About</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- section -->
+    <section class="section">
+        <p class="section_index">Delicious</p>
+        <h1>Our Praducts</h1>
+        <img class="section_img_rigth" src="./src/images/about.png.webp" alt="">
+        <img class="section_img" src="./src/images/hero-shape.png (1).webp" alt="cake">
+    </section>
+
+    <!-- praducts -->
+    <input type="text"  placeholder="search" id="search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="main">
+   
+        <div class="praducts" id="praducts">
+
+        </div>
+       
+    </div>
+    <div class="buttons">
+        <button  id="prew" type="button"><i class="fa-solid fa-angles-left"></i>Prew</button>
+        <button id="next" type="button">Next<i class="fa-solid fa-angles-right"></i></button>
+    </div>
+
+
+    <!-- footer img -->
+    <div class="footer_img">
+        <div style="transition: 1s ease all;" class="img1"><i style="opacity: 0;"
+                class="fa-brands icon1 fa-instagram icon"></i></div>
+        <div style="transition: 1s ease all;" class="img2"><i style="opacity: 0;"
+                class="fa-brands icon2 fa-instagram icon"></i></div>
+        <div style="transition: 1s ease all;" class="img3"><i style="opacity: 0;"
+                class="fa-brands icon3 fa-instagram icon"></i></div>
+        <div style="transition: 1s ease all;" class="img4"><i style="opacity: 0;"
+                class="fa-brands icon4 fa-instagram icon"></i></div>
+    </div>
+    <!-- Footer -->
+    <div class="contact">
+        <div class="contact_logo">
+            <img src="./src/images/logo.png.webp" alt="">
+            <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris
+                nisi ufsit aliquip.</p>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+
+        </div>
+        <div class="contact_nav">
+            <span>Quick Links</span>
+            <a href="./index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Bloq</a>
+            <a href="">Contact</a>
+
+        </div>
+        <div class="contact_cake">
+            <p>Cakes</p>
+            <label>Blackforest</label>
+            <label>Bodhubon</label>
+            <label>Rongdhonu</label>
+            <label>Meghrong</label>
+        </div>
+        <div class="contact_us">
+            <p>Contact US</p>
+            <span>76/A, Green Lane, Dhanmodi NYC</span>
+            <a>+10(78) 738-3384</a>
+        </div>
+    </div>
+    <script src="./src/js/praduct.js"></script>
+</body>
+
+</html>
