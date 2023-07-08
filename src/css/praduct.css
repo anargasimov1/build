@@ -146,7 +146,7 @@
 
 .swiper_slide_item {
     background-color: #e3c9d56d;
-    min-width: 350px;
+    min-width: 300px;
     height: 430px;
     border-bottom-right-radius: 50px;
     display: flex;

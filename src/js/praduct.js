@@ -14,7 +14,6 @@ btn.addEventListener("click", () => {
 
 
 // section
-let wishlist = JSON.parse(localStorage.getItem("wishlist"));
 const section_index = document.querySelector(".section_index");
 
 setInterval(() => {
@@ -53,6 +52,8 @@ function renderpraduct() {
 }
 renderpraduct();
 
+
+
 next.onclick = () => {
     if (praductscount < list / perPage)
         praductscount++;
@@ -75,7 +76,6 @@ serach.oninput = () => {
     }
 }
 
-
 function addpraducts(par) {
     let current = par.slice((praductscount - 1) * perPage, praductscount * perPage);
     for (let i = 0; i < current.length; ++i)  praducts.innerHTML += render(current[i].title, current[i].img, current[i].description, current[i].id);
@@ -90,8 +90,8 @@ function render(title, img, about, id) {
       <h3>${title}</h3>
       <p>${about}</p>
                 <><><><><><><><><><><><><><><><><>
-      <button id="btn3" class="card_btn" type="button">$20 | Oreder Now</button>
-            <button data-id = ${id}
+      <button  class="card_btn" type="button">$20 | Oreder Now</button>
+            <button style="cursor: pointer;" data-id = ${id}
              data-src=${img}
              data-title=${title}
              data-about=${about}
@@ -102,17 +102,16 @@ function render(title, img, about, id) {
 
 }
 
-
-
 document.addEventListener("click", e => {
 
     let id = e.target.dataset.id
     if (id) {
+        e.target.style.backgroundColor = "green";
         let title = e.target.dataset.title,
             img = e.target.dataset.src,
             description = e.target.dataset.about,
             id = e.target.dataset.id,
-            hearts = { title, img, description, id, color: "green" };
+            hearts = { title, img, description, id };
         arr.push(hearts);
         addstronge(hearts);
     }
@@ -120,10 +119,9 @@ document.addEventListener("click", e => {
 })
 
 
-
-
 function addstronge(par) {
     chekstronge();
+    arr = arr.filter(i => i.title !== par.title)
     arr.push(par)
     localStorage.setItem("wishlist", JSON.stringify(arr));
     lengthsweets();
